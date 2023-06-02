@@ -7,7 +7,7 @@ class HomeListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 220,
+      height: 179,
       width: MediaQuery.of(context).size.width,
       child: ListView.builder(
         itemBuilder: (context, index) => const RecentCard(),

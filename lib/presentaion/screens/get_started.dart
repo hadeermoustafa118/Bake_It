@@ -1,3 +1,4 @@
+import 'package:bakeryorder/presentaion/screens/root_page.dart';
 import 'package:flutter/material.dart';
 
 class GetStarted extends StatelessWidget {
@@ -28,11 +29,13 @@ class GetStarted extends StatelessWidget {
             ),const SizedBox(
               height: 10,
             ),
-            Text('''Where all your favourite bakery 
+           const Text('''Where all your favourite bakery 
             stuff are available.''', style:TextStyle(fontSize: 16) ,),
-            SizedBox(height: 20,),
+           const  SizedBox(height: 20,),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_)=> const RootPage()));
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromRGBO(183, 98, 29, 1),
                   fixedSize: const Size(250, 50)),

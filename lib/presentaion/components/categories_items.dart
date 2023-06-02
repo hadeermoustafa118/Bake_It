@@ -12,8 +12,8 @@ class CategoryItem extends StatelessWidget {
           child: Image.asset('assets/images/category.png'),
         ),
       ),
-      SizedBox(height: 10,),
-      Text('All', ),
+      const SizedBox(height: 10,),
+      const Text('All', ),
     ],);
   }
 }

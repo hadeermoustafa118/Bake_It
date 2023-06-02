@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-class HomeRow extends StatelessWidget {
-  const HomeRow({Key? key}) : super(key: key);
 
+class HomeRow extends StatelessWidget {
+  const HomeRow({Key? key, required this.title}) : super(key: key);
+
+  final String title;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'Recently Added',
-          style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+          title,
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
         ),
-        Text(
+        const Text(
           'See All',
           style: TextStyle(
             fontSize: 16,

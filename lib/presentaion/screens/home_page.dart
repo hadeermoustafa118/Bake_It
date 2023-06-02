@@ -13,8 +13,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        systemOverlayStyle:
-            const SystemUiOverlayStyle(statusBarColor: Colors.transparent, statusBarIconBrightness: Brightness.dark),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent,
+            statusBarIconBrightness: Brightness.dark),
         backgroundColor: Colors.white,
         elevation: 0.0,
         actions: [
@@ -47,7 +48,9 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            HomeRow(),
+            HomeRow(
+              title: 'Recently Added',
+            ),
             SizedBox(
               height: 18,
             ),
